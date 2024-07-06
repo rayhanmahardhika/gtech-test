@@ -3,12 +3,15 @@ package com.rayhan.gtech_test.product.dto;
 import lombok.Builder;
 import lombok.Getter;
 
+import java.util.List;
+
 @Builder
 @Getter
 public class SaleResponse {
     private String orderNumber;
-    private long productId;
-    private String productName;
-    private String productType;
+    private String orderDate;
+    private String marginPrice;
+    private String salePrice;
 
+    private List<ProductResponse> products;
 }
