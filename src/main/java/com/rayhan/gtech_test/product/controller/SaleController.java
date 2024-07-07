@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/sales")
 public class SaleController {
-    private SaleService saleService;
+    private final SaleService saleService;
 
     @GetMapping("/reports")
     public ResponseEntity<SaleResponse> getReports() {
